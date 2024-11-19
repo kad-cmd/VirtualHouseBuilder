@@ -47,7 +47,7 @@ class House {
     }
     getSize() { return this.houseSize; }
 
-    // count of all of the rooms (living room, bedroom, laundry room..etc)
+    // change this to be the count of all of the rooms (living room, bedroom, laundry room..etc)
     setRooms(roomNum) {
         if (roomNum < this.#minRooms || roomNum > this.#maxRooms) {
             console.log(`Rooms must be between ${this.#minRooms} and ${this.#maxRooms}.`);
@@ -196,6 +196,6 @@ class FarmHouse extends House {
     }
 }
 
-const myFarmHouse = new Ranch();
-myFarmHouse.setRooms(8);
-console.log(myFarmHouse.getDesc())
+const myRanchHouse = new Ranch();
+myRanchHouse.setRooms(8);
+console.log(myRanchHouse.getDesc())
