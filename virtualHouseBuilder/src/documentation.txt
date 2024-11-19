@@ -1,0 +1,36 @@
+Virtual House Builder: Overview
+
+This project aims to simulate the process of customizing and building virtual houses using JavaScript classes and inheritance. The goal is to create a base class representing a generic house blueprint, from which different types of houses (like Ranch, Farmhouse, etc.) can be derived. Users will be able to customize the features of their house (such as the number of rooms, bathrooms, size, and more), and then "build" their house, which can later be presented to a construction company.
+Core Features:
+
+    Base Class (BluePrint): The BluePrint class will serve as the parent class for all house types. It includes basic properties such as houseSize, rooms, bathrooms, kitchen, and garage, along with methods to get and set these properties.
+    Customization: Users can customize their virtual house by setting various features like the number of rooms, bathrooms, house size, etc.
+    House Types: Different types of houses (e.g., Ranch, FarmHouse) will inherit from the base BluePrint class and have their specific features.
+    Build Method: After customizing their house, users can "build" their house and get a summary of the features they've selected.
+
+Classes and Methods
+
+    BluePrint Class (Base Class)
+        Properties:
+            houseType: Type of house (e.g., Ranch, Farmhouse).
+            houseSize: Size of the house in square feet.
+            rooms: Number of rooms.
+            bathrooms: Number of bathrooms.
+            kitchen: Kitchen style (e.g., Open concept, Closed).
+            garage: Garage availability (e.g., attached, detached, or none).
+        Methods:
+            getSpecs(): Returns a generic specification of the house.
+            getDesc(): Returns a general description of the house.
+            setSize(size): Sets the size of the house within a valid range.
+            setRooms(roomNumber): Sets the number of rooms within a valid range.
+            setBathrooms(bathroomNumber): Sets the number of bathrooms within a valid range.
+            setGarage(garage): Sets whether the house has a garage.
+            buildHouse(): Compiles all house features into a building summary.
+
+    House Types (e.g., Ranch, FarmHouse)
+        These classes extend BluePrint and specify additional features or constraints.
+        Example: The Ranch class has a specific range for the house size and features such as a single-story layout.
+
+Project Flow
+
+    Create a House Type: Instantiate a house type, such as Ranch. 2. Customize Features: Use methods like setRooms(), setBathrooms(), setSize(), and setGarage() to customize the house. 3. Build the House: After customization, use the buildHouse() method to generate a summary of the virtual house. 4. Presentation: The output can be presented to a construction company (or simulated further).
