@@ -1,4 +1,4 @@
-class House2 {
+class House {
     // Private fields (using TypeScript's private fields syntax)
     private minHouseSize: number = 1000;
     private maxHouseSize: number = 5000;
